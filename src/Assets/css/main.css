@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+#root, .app {
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    position: relative;
+}
+
+.pro-sidebar-inner{
+    background-color: #ffffff !important;
+    box-shadow: 0 0 10px #B1BECA;
+}
+
+.user-dropdown{
+    left: -35px !important;
+    top: 52px !important;
+    z-index: 10;
+    width: 200px;
+}
+
+.user-dropdown .MuiPaper-elevation1{
+    color: #8397AB;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.user-dropdown .MuiPaper-elevation1 ul li{
+    padding: 8px 10px;
+    border-bottom: 1px solid #F7F7FB;
+}
+
+.user-dropdown .MuiPaper-elevation1 ul li p{
+    font-size: 10px;
+    margin-top: 2px;
+    color: #FB6D9C;
+    margin-bottom: -0.2em;
+}
+
+.pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+    background-color: white !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+    font-size: 20px !important;
+}
+
+.pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+    background-color: #F4F8FB !important;
+}
+
+.main-content{
+    width: 100%;
+    padding: 2em 3em;
+    color: #5C566F;
+    max-height: 90%;
+    overflow: auto;
+    background-color: #F4F8FB;
+}
+
+.cashflow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.cashflow-item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    font-size: 14px;
+}
+
+.cashflow-item div{
+    width: 50%;
+}
+
+.money{
+    display: flex;
+    width: 100%;
+    margin-top: 0.5em;
+    flex-direction: row;
+}
+
+.money .item{
+    width: 30%;
+    font-size: 15px;
+}
+
+.money .item p:first-child{
+    color: #A4B2C1;
+}
+
+.money .item p:nth-child(2){
+    color: #49425D;
+    margin-top: -1em;
+}
+
+@media screen and (max-width: 450px) {
+    .toggle-menu{
+        display: inline-block !important;
+    }
+
+    .col-md-12 {
+        margin-top: 0.8em;
+    }
+
+    .main-content {
+        max-height: 100%;
+    }    
+
+    .money .item{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 768px) and (min-width: 450px) {
+    .toggle-menu{
+        display: inline-block !important;
+    }
+    .col-md-12 {
+        margin-top: 0.8em;
+    }
+    .money .item{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 991px) and (min-width: 768px)  {
+    .col-md-12 {
+        margin-top: 0.8em;
+    }
+
+}
